@@ -13,5 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         tValogatott = t.filter(e => (e%5)==0);
         console.log(tValogatott);
     });
+    document.getElementById('hozzaAdTombhozGomb').addEventListener('click', () => {
+        tValogatott.push(document.getElementById('hozzaadTombhozInput').value.to);
+        console.log(tValogatott);
+    });
 });
 
